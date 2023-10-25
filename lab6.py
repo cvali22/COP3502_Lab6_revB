@@ -16,7 +16,7 @@ def decode(password):
     return original
 
 if __name__ == '__main__':
-    en_password = "" # Declaring en_password here so it is accessible everywhere
+
 
     option = 0
     while(option != 3): #Prompt user with menu until they select quit (option 3)
@@ -24,7 +24,7 @@ if __name__ == '__main__':
         option = int(input("Please enter an option: ")) #get user selection
 
         if(option == 1): #encode
-            # en_password = '' #new string that holds the encoded password
+            en_password = '' #new string that holds the encoded password
             password = input("Please enter your password to encode: ")
 
             for index in range(len(password)): #perform the encryption by shifting each number by 3
