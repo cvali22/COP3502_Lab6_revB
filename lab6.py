@@ -30,3 +30,4 @@ if __name__ == '__main__':
         elif(option == 2): #decode
             pass
 #------------------------- LAB PARTNER IMPLEMENT DECODE HERE----------------------------------------
+#encoded password is stored in the "en_password" string
