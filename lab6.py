@@ -3,7 +3,7 @@
 #Lab 6
 
 
-# Implemented by Andres De la Flor
+# Decode function implemented by Andres De la Flor
 # Decodes the encrypted password
 def decode(password):
     original = ""
