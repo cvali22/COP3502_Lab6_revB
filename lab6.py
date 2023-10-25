@@ -2,8 +2,23 @@
 #Corey Cavalli
 #Lab 6
 
+
+# Implemented by Andres De la Flor
+# Decodes the encoded password
+def decode(password):
+    original = ""
+
+    # Loop through the encoded password to revert each character to its original
+    for digit in password:
+        shifted = (int(digit) + 10 - 3) % 10
+        # Add 10 so we can shift each number back by 3, and the ones digit is our decoded digit
+        original += str(shifted)
+
+    return original
+
 if __name__ == '__main__':
 
+    en_password = ''
     option = 0
     while(option != 3): #Prompt user with menu until they select quit (option 3)
         print("Menu\n-------------\n1. Encode\n2. Decode\n3. Quit\n")
@@ -27,6 +42,6 @@ if __name__ == '__main__':
 
             print("Your password has been encoded and stored!\n")
 
+
         elif(option == 2): #decode
-            pass
-#------------------------- LAB PARTNER IMPLEMENT DECODE HERE----------------------------------------
+            print(f"The encoded password is {en_password}, and the original password is {decode(en_password)}.")
